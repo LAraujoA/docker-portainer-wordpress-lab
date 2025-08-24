@@ -1,0 +1,21 @@
+version: "3.9"
+
+services:
+  wordpress2:
+    image: wordpress:6.7.2-php8.1-apache
+    restart: unless-stopped
+    environment:
+      WORDPRESS_DB_HOST: Mariadb
+      WORDPRESS_DB_NAME: wordpress2
+      WORDPRESS_DB_USER: wpuser2
+      WORDPRESS_DB_PASSWORD: wppass2
+    ports:
+      - "80:80"
+    volumes:
+      - /volume2/Docker/wordpress2:/var/www/html
+    networks:
+      - MariadbNet
+
+networks:
+  MariadbNet:
+    external: true
