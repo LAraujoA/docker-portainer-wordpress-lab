@@ -89,3 +89,14 @@ Ahora WordPress2 estará gestionado como **Stack** en Portainer.
 ./nuke-dokcer.sh
 ```
 
+## 🔄 Flujo del laboratorio
+
+```mermaid
+flowchart LR
+    A[⚙️ setup-portainer.sh\nInstala Docker + Portainer + IP estática] --> B[📦 deploy-containers.sh\nLevanta MariaDB + PhpMyAdmin + WP1 + WP2]
+    B --> C[🔧 Convertir WordPress2 en Stack\nvia Portainer + compose/wordpress2.yml]
+    C --> D[🧹 purge-containers.sh\nReset: contenedores + imágenes + volúmenes]
+    D --> E[💣 nuke-docker.sh\nDesinstalar Docker + Compose + Portainer]
+```
+
+
