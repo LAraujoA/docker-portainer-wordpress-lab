@@ -32,6 +32,7 @@ cd docker-portainer-wordpress-lab
 chmod +x setup-portainer.sh
 chmod +x deploy-containers.sh
 chmod +x purge-containers.sh
+chmod +x nuke-docker.sh
 ```
 ---
 ### 4- Instalación base (Docker, Compose, Portainer, IP estática)
@@ -42,7 +43,7 @@ chmod +x purge-containers.sh
 
 ---
 
-### 5- Despliegue de contenedores (MariaDB, PhpMyAdmin, WordPress1 y WordPress2)
+### 🔝 5- Despliegue de contenedores (MariaDB, PhpMyAdmin, WordPress1 y WordPress2)
 ```bash
 ./deploy-containers.sh
 ```
@@ -68,7 +69,7 @@ Ahora WordPress2 estará gestionado como **Stack** en Portainer.
 
 ---
 
-### 7- Limpieza del laboratorio (reset total)
+### ♻️ 7- Limpieza del laboratorio (reset total)
 ```bash
 # Solo eliminar contenedores y red
 ./purge-containers.sh
@@ -81,3 +82,10 @@ Ahora WordPress2 estará gestionado como **Stack** en Portainer.
 ```
 
 ---
+
+### ⛔ 8- Para desinstalar todo Docker + Compose + Portainer (OPCIONAL)
+```bash
+# Ejecutar el siguiente script
+./nuke-dokcer.sh
+```
+
