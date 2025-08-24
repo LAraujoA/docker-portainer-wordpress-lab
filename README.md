@@ -1,6 +1,6 @@
 # docker-portainer-wordpress-lab
 
-Laboratorio educativo con **Docker**, **Docker Compose**, **Portainer**, **MariaDB**, **PhpMyAdmin** y **WordPress**.  
+Entorno educativo con **Docker**, **Docker Compose**, **Portainer**, **MariaDB**, **PhpMyAdmin** y **WordPress**.  
 Incluye scripts para **instalación base**, **despliegue de contenedores**, **conversión de WordPress2 a Stack** y **limpieza total**.
 
 ---
@@ -14,7 +14,7 @@ Incluye scripts para **instalación base**, **despliegue de contenedores**, **co
 
 ---
 
-## 🛠️ Pasos para utilizar el laboratorio
+## 🛠️ Pasos para utilizar el Script
 
 ### 1- Instalar Git
 ```bash
